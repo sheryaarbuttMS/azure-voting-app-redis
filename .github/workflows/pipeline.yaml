@@ -27,7 +27,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v2
         with:
-          context: 2_container_ci-cd-kubernetes
+          context: azure-vote
           push: true
           tags: acrjenkinssheryaar.azurecr.io/azure-vote-front:kube${{ github.run_number }}
   
