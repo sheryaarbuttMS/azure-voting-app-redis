@@ -42,7 +42,7 @@ jobs:
         uses: Azure/aks-set-context@v1.1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }} 
-          resource-group: test-actions
+          resource-group: test-jenkins
           cluster-name: aks-jenkins-cluster2
 
       - name: Update deployment
